@@ -58,8 +58,8 @@
 		firebase.initializeApp(config);
 		var AzDatabase = firebase.database();
 		var ReadRun = 0;
-		var GameLogin = 0;
-		var PlayerName = "";
+		var GameLogin = 1;
+		var PlayerName = "My friend";
 		var bScoreUpload = 0;
 		AzDatabase.ref('/Server/admin').once('value').then(function(snapshot) {
             ReadRun = snapshot.val().EnableRun
